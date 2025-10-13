@@ -1,0 +1,45 @@
+.content{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* space between image and text */
+  padding: 2rem;
+   background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+    
+}
+.textContainer,
+.imageContainer{
+flex: 1;
+}
+img{
+     width: 100%; /* make image fill its container */
+  max-width: 400px; /* prevent it from becoming too large */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center if smaller */
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.textContainer{
+  padding: 1.5rem 2rem;
+  color: #333; /* dark gray for readability */
+  line-height: 1.7; /* better spacing between lines */
+  font-family: 'Poppins', sans-serif; /* clean modern font */
+  letter-spacing: 0.3px; /* small spacing between letters */
+}
+
+.textContainer h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111;
+  
+}
+
+.textContainer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify; /* makes paragraphs look neat */
+}
