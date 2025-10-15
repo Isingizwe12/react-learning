@@ -8,7 +8,7 @@ function Navbar(){
             {/* left side */}
             <span className='left-side'>Home</span>
             <ul>
-                <li>About</li>
+                <li className='hover:bg-blue-300'>About</li>
                 <li>Contact Us</li>
                 <li>Our Service</li>
             </ul>
