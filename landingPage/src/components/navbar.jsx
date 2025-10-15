@@ -1,16 +1,17 @@
 import React from 'react'
 import './navbar.css'
-
+import { Link } from 'react-router-dom'
 function Navbar(){
   return (
     <div>
-        <div className='navbar'>
+        <div className='navbar py-6'>
             {/* left side */}
-            <span className='left-side'>Home</span>
+            <span className='left-side'><Link to="/">Home</Link></span>
+            {/* right side */}
             <ul>
-                <li className='hover:bg-blue-300'>About</li>
-                <li>Contact Us</li>
-                <li>Our Service</li>
+              <li className='cursor-pointer'><Link to="/about">About</Link></li>  
+                <li className='cursor-pointer'>Contact Us</li>
+                <li className='cursor-pointer'>Our Service</li>
             </ul>
             </div>
       
